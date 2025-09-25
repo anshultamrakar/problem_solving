@@ -1,20 +1,20 @@
 const string = "swiss"
 
-function firstNonRepeating(str){
-  let map = {}
-  for(let i = 0 ; i < str.length ; i++){
-    if(!map[str[i]]){
-        map[str[i]] =1 
-    }else{
-        ++map[str[i]]
+function firstNonRepeating(str) {
+    let map = {}
+    for (let i = 0; i < str.length; i++) {
+        if (!map[str[i]]) {
+            map[str[i]] = 1
+        } else {
+            ++map[str[i]]
+        }
     }
-  }
 
-  for(let k in map){
-  if(map[k] === 1){
-    return k
-  }
-  }
+    for (let k in map) {
+        if (map[k] === 1) {
+            return k
+        }
+    }
 }
 
 
