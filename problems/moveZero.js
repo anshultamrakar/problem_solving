@@ -12,7 +12,6 @@ function moveZeros(arr){
   for(let i = x ; i < arr.length ;i++){
     arr[i] = 0 
   }
-
   return arr
 }
 
